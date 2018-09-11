@@ -15,3 +15,11 @@
 2. Go to the "Personal Access Tokens" section
 3. Add a new token and give it access to "All Scopes"
 4. Save the token somewhere, you'll only be able to see it once
+
+### Create a Build for the project
+1. Pull the project down from source onto your local computer (this will be necessary for later)
+2. Make sure it builds locally
+3. Go to your VSTS, go to Pipelines, Builds, and then add a new build
+4. Select "External Git" as your Source Control provider
+5. Choose the ASP.NET template
+6. Queue a build and use the "Default" agent pool that we setup our agent on
