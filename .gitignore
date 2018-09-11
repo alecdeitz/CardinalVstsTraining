@@ -3,3 +3,6 @@
 ################################################################################
 
 /VstsBasicApp/VstsBasicApp/bin
+/VstsBasicApp/VstsBasicApp/obj/Debug
+/VstsBasicApp/packages
+/VstsBasicApp/.vs
