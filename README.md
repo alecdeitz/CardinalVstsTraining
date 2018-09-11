@@ -2,7 +2,7 @@
 
 ### Setup Build Agent
 1. Create a VM (or use your local machine) - Visual Studio Enterprise 2017 on Windows 10 Enterprise N (x64)
- with 8GB of RAM recommended
+ with 8GB of RAM recommended (You will need at least some form of Visual Studio installed)
 2. Login to your VSTS account from the machine
 3. Go to "Organization Settings"
 4. Go to "Agent Pools"
