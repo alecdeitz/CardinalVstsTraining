@@ -38,4 +38,21 @@
 3. Go to your VSTS, go to Pipelines, Builds, and then add a new build
 4. Select "Azure Repos Git" as your Source Control provider and choose CardinalVstsTraining
 5. Choose the ASP.NET template
-6. Queue a build and use the "Default" agent pool that we setup our agent on
+6. Make sure the Solution's build arguments look like this:
+
+/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation="$(build.artifactstagingdirectory)"
+
+7. Queue a build and use the "Default" agent pool that we setup our agent on
+
+### Tests in VSTS
+1. Go to the "Test Plans" tab and make sure you have the ability to add/manage tests
+2. If so, create a new Test Plan
+3. Try running the tests locally (You'll need the Specflow extension installed in your Visual Studio instance)
+4. Run the follow command to import your tests into VSTS:
+
+5. Create a build for the Acceptance Tests project (should be able to use a standard ASP.NET project again)
+6. Make sure the build arguments for the solution look like this:
+
+/p:TargetProfile=$(BuildConfiguration)/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation=$(Build.StagingDirectory)
+
+
