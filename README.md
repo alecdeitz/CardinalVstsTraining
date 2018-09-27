@@ -44,6 +44,17 @@
 
 7. Queue a build and use the "Default" agent pool that we setup our agent on
 
+### Create a Release to go with the Build
+1. Go to the Releases tab and click the "+" button
+2. Choose "Create a release pipeline"
+3. Choose the "Azure App Service deployment" template
+4. Click "Add an artifact" and choose the previous build you created
+5. Click the environment name "Stage 1" and rename it to something like "Dev"
+6. Click the lightning symbol next to the left of the environment's name (should be called "Pre-deployment Conditions")
+7. Make sure the trigger is set to "After Release". This is how you can customize the triggers for your different environments
+8. Click the "1 job, 1 task" link
+9. Fill out the information for an app service on your Azure subscription (you may need to link your Azure subscription to your VSTS instance which you should be able to do from the "Manage" link, also create an App Service if you haven't already)
+
 ### Tests in VSTS
 1. Go to the "Test Plans" tab and make sure you have the ability to add/manage tests
 2. If so, create a new Test Plan
