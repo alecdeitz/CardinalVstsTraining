@@ -61,9 +61,19 @@
 3. Try running the tests locally (You'll need the Specflow extension installed in your Visual Studio instance)
 4. Run the follow command to import your tests into VSTS:
 
-5. Create a build for the Acceptance Tests project (should be able to use a standard ASP.NET project again)
-6. Make sure the build arguments for the solution look like this:
+5. Go back to your test plan and click "Add Existing"
+6. Search for your imported test cases, should be the latest created and then add them to your test plan
+6. Create a build for the Acceptance Tests project (should be able to use a standard ASP.NET project again)
+7. Make sure the build arguments for the solution look like this:
 
 /p:TargetProfile=$(BuildConfiguration)/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation=$(Build.StagingDirectory)
 
-
+8. Go to create a release and have it as a blank release
+9. Add a "Visual Studio Test" task
+10. Set the "Select Tests Using" to "Test Run"
+11. "Test run" to "$(test.RunId)"
+12. "Search Folder" to "$(System.DefaultWorkingDirectory)"
+13. Go back to your test plan and click the arrow right next to the name of your test plan then click "Test Plan Settings"
+14. Set the build and release pipelines to the one you just created. Put "Build Number" to latest and "Stage" to your environment name
+15. Run the tests by right clicking on any of them and selecting "Run tests"
+16. Quick discussion on the rest of the Test tab
