@@ -62,7 +62,7 @@
 3. Try running the tests locally (You'll need the Specflow extension installed in your Visual Studio instance)
 4. Run the follow command from the bin folder of your project to import your tests into VSTS:
 
-tcm testcase /collection:"https://yourvstsaccount.visualstudio.com" /teamproject:Your_Team_Project /import /storage:"VSTSBasicAppTests.dll" /login:username,password /allowalternatecredentials
+tcm testcase /collection:"https://yourvstsaccount.visualstudio.com" /teamproject:Your_Team_Project /import /storage:"VstsBasicApp.Tests.dll" /login:username,password /allowalternatecredentials
 (use the alternate credentials we set up earlier here)
 
 5. Go back to your test plan and click "Add Existing"
