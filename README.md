@@ -26,6 +26,7 @@
 6. Extract the files to somewhere on your computer
 7. Run the "config" file and follow the instructions
 8. Run the "run" file once you've completed
+9. Install Chrome if it's not already installed. We'll need this for later.
 #### To Generate a PAT (Personal Access Token)
 1. Click your account in the top right-hand corner
 2. Go to the "Personal Access Tokens" section
