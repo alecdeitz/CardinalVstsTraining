@@ -31,6 +31,7 @@
 2. Go to the "Personal Access Tokens" section
 3. Add a new token and give it access to "All Scopes"
 4. Save the token somewhere, you'll only be able to see it once
+5. Go to the "Alternate Credentials" section and add a username/password. This will be necessary for later
 
 ### Create a Build for the project
 1. Pull the project down from source onto your local computer (this will be necessary for later)
@@ -59,7 +60,10 @@
 1. Go to the "Test Plans" tab and make sure you have the ability to add/manage tests
 2. If so, create a new Test Plan
 3. Try running the tests locally (You'll need the Specflow extension installed in your Visual Studio instance)
-4. Run the follow command to import your tests into VSTS:
+4. Run the follow command from the bin folder of your project to import your tests into VSTS:
+
+tcm testcase /collection:"https://yourvstsaccount.visualstudio.com" /teamproject:Your_Team_Project /import /storage:"VSTSBasicAppTests.dll" /login:username,password /allowalternatecredentials
+(use the alternate credentials we set up earlier here)
 
 5. Go back to your test plan and click "Add Existing"
 6. Search for your imported test cases, should be the latest created and then add them to your test plan
