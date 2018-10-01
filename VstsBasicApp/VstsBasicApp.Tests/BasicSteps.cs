@@ -15,6 +15,12 @@ namespace VstsBasicApp.Tests
         {
             _webDriver = new ChromeDriver();
             _webDriver.Manage().Window.Maximize();
+
+            //ChromeOptions options = new ChromeOptions();
+            //options.AddArgument("--headless");
+            //_webDriver = new ChromeDriver(options);
+            //_webDriver.Manage().Window.Size = new Size(1300, 1500);
+
             _webDriver.Navigate().GoToUrl("http://www.google.com");
         }
 
