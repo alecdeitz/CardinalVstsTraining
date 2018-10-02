@@ -44,7 +44,9 @@
 
 /p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation="$(build.artifactstagingdirectory)"
 
-7. Queue a build and use the "Default" agent pool that we setup our agent on
+7. Click the first phase (probably titled "Agent job 1") and change the Agent pool to the pool you added your agent to
+8. Save the build
+9. Queue a build
 
 ### Create a Release to go with the Build
 1. Go to the Releases tab and click the "+" button
