@@ -53,12 +53,12 @@
 3. Choose the "Azure App Service deployment" template
 4. Click "Add an artifact" and choose the previous build you created
 5. Click the lightning symbol next to the artifact you've added and then enable the "Continuous Deployment trigger"
-5. Click the environment name "Stage 1" and rename it to something like "Dev"
-6. Click the lightning symbol next to the left of the environment's name (should be called "Pre-deployment Conditions")
-7. Make sure the trigger is set to "After Release". This is how you can customize the triggers for your different environments
-8. Click the "1 job, 1 task" link
-9. Fill out the information for an app service on your Azure subscription (you may need to link your Azure subscription to your VSTS instance which you should be able to do from the "Manage" link, also create an App Service if you haven't already)
-10. Save and then run the release
+6. Click the environment name "Stage 1" and rename it to something like "Dev"
+7. Click the lightning symbol next to the left of the environment's name (should be called "Pre-deployment Conditions")
+8. Make sure the trigger is set to "After Release". This is how you can customize the triggers for your different environments
+9. Click the "1 job, 1 task" link
+10. Fill out the information for an app service on your Azure subscription (you may need to link your Azure subscription to your VSTS instance which you should be able to do from the "Manage" link, also create an App Service if you haven't already)
+11. Save and then run the release
 
 ### Tests in VSTS
 1. Go to the "Test Plans" tab and make sure you have the ability to add/manage tests
