@@ -1,6 +1,6 @@
 # Cardinal VSTS Training
 
-(If you have not already set up a VSTS project reference this link - https://docs.microsoft.com/en-us/azure/devops/organizations/billing/set-up-billing-for-your-organization-vs?view=vsts)
+(If you have not already associated a VSTS project with an Azure subscription reference this link - https://docs.microsoft.com/en-us/azure/devops/organizations/billing/set-up-billing-for-your-organization-vs?view=vsts)
 
 ### Create a new VSTS Team Project
 1. Click the Azure DevOps icon in the top left corner to get to your top level of projects
