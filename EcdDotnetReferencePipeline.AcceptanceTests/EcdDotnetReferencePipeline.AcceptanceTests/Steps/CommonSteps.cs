@@ -1,5 +1,5 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.IE;
 using TechTalk.SpecFlow;
 
 namespace EcdDotnetReferencePipeline.AcceptanceTests.Steps
@@ -10,7 +10,7 @@ namespace EcdDotnetReferencePipeline.AcceptanceTests.Steps
         [BeforeScenario]
         public void BeforeScenario()
         {
-            var driver = new ChromeDriver("C:\\Drivers\\");
+            var driver = new InternetExplorerDriver();
             driver.Manage().Window.Maximize();
             ScenarioContext.Current.Add("driver", driver);
         }
