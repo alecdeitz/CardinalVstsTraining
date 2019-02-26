@@ -71,11 +71,6 @@
   </Choose>
   <ItemGroup>
     <Compile Include="ConfigurationSettings.cs" />
-    <Compile Include="Features\AccountOwners.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AccountOwners.feature</DependentUpon>
-    </Compile>
     <Compile Include="Features\Google.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -89,10 +84,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Features\AccountOwners.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>AccountOwners.feature.cs</LastGenOutput>
-    </None>
     <None Include="Features\Google.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Google.feature.cs</LastGenOutput>
