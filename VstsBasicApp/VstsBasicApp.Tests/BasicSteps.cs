@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.IE;
 using TechTalk.SpecFlow;
 
 namespace VstsBasicApp.Tests
@@ -13,7 +13,7 @@ namespace VstsBasicApp.Tests
         [Given(@"we open Google")]
         public void GivenWeOpenGoogle()
         {
-            _webDriver = new ChromeDriver();
+            _webDriver = new InternetExplorerDriver();
             _webDriver.Manage().Window.Maximize();
 
             //ChromeOptions options = new ChromeOptions();
