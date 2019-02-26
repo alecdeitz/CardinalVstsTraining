@@ -8,3 +8,7 @@
 /VstsBasicApp/.vs
 /VstsBasicApp/VstsBasicApp.Tests/bin/Debug
 /VstsBasicApp/VstsBasicApp.Tests/obj/Debug
+/EcdDotnetReferencePipeline.AcceptanceTests/.vs
+/EcdDotnetReferencePipeline.AcceptanceTests/packages
+/EcdDotnetReferencePipeline.AcceptanceTests/EcdDotnetReferencePipeline.AcceptanceTests/bin
+/EcdDotnetReferencePipeline.AcceptanceTests/EcdDotnetReferencePipeline.AcceptanceTests/obj
